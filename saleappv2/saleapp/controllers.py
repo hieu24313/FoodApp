@@ -39,8 +39,6 @@ def login_admin():
     return redirect('/admin')
 
 
-class ContactForm1(FlaskForm):
-    recaptcha = RecaptchaField()
 
 
 class ContactForm(FlaskForm):
@@ -63,7 +61,7 @@ def register():
                 dao.register(name=request.form['name'],
                              username=request.form['username'],
                              password=password,
-                             phonenumber = request.form['numPhone'],
+                             phonenumber=request.form['numPhone'],
                              avatar=avatar)
 
                 return redirect('/login')
@@ -73,7 +71,6 @@ def register():
             err_msg = 'Mật khẩu KHÔNG khớp!'
 
     return render_template('register.html', err_msg=err_msg, form=form)
-
 
 
 @annonymous_user

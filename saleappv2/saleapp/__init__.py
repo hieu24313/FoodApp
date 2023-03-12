@@ -13,9 +13,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:%s@localhost/fooda
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.config['CART_KEY'] = 'cart'
 app.config['SECRET_KEY'] = '6LeM0fMkAAAAAPvNj-HkjFpj0FFX7mPfjH44fRpn'
-app.config['RECAPTCHA_PUBLIC_KEY'] = '6LeM0fMkAAAAACB28SBXrc_bjpb3krUcrPdzOG0M'
-app.config['RECAPTCHA_PRIVATE_KEY'] = '6LeM0fMkAAAAAPvNj-HkjFpj0FFX7mPfjH44fRpn'
-# app.config['RECAPTCHA_SECRET_KEY'] = os.environ.get('6LeM0fMkAAAAAPvNj-HkjFpj0FFX7mPfjH44fRpn')
+app.config['RECAPTCHA_PUBLIC_KEY'] = '6LfIq_MkAAAAAAkqaKZUFwqhKnBZ44wfanxQfFQk'
+app.config['RECAPTCHA_PRIVATE_KEY'] = '6LfIq_MkAAAAAFdstbFJGU6u0eHIWttg8n9_d1x3'
 cloudinary.config(cloud_name='dhwuwy0to', api_key='569153767496484', api_secret='ghXq0iY8RhWbqBcJaide7W-34RY')
 
 db = SQLAlchemy(app=app)
